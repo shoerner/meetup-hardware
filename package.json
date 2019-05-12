@@ -1,0 +1,26 @@
+{
+  "name": "hardware",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "license": "MIT",
+  "scripts": {
+    "buildDeps": "cd node_modules/react-hardware && yarn",
+    "start": "yarn buildDeps && yarn babel index.js src --out-dir lib && node lib/index.js"
+  },
+  "dependencies": {
+    "@babel/preset-env": "^7.4.4",
+    "johnny-five": "^1.0.0",
+    "react": "^16.8.6",
+    "react-hardware": "https://github.com/shoerner/react-hardware.git#button-pullup",
+    "serialport": "^7.1.5"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.4",
+    "@babel/node": "^7.2.2",
+    "@babel/plugin-transform-modules-commonjs": "^7.4.4",
+    "@babel/preset-react": "^7.0.0",
+    "prettier": "^1.17.0",
+    "prop-types": "^15.7.2"
+  }
+}
