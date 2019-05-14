@@ -1,1 +1,1 @@
-export { MaxMatrix } from './MaxMatrix';
+export { MaxMatrix } from "./MaxMatrix";
